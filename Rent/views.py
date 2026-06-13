@@ -1,4 +1,4 @@
-from asyncio.windows_events import NULL
+# from asyncio.windows_events import NULL
 from itertools import count
 import json
 from multiprocessing import context
@@ -23,7 +23,7 @@ def books(request):
             totalStars += review.stars
 
         totalReviews = len(list(reviews))
-        if totalReviews is not 0:
+        if totalReviews != 0:
             totalStars = totalStars/totalReviews
         totalStars = round(totalStars)
         b.totalStar = range(totalStars)
@@ -82,7 +82,7 @@ def catoBooks(request, pk):
             totalStars += review.stars
 
         totalReviews = len(list(reviews))
-        if totalReviews is not 0:
+        if totalReviews != 0:
             totalStars = totalStars/totalReviews
         totalStars = round(totalStars)
         b.totalStar = range(totalStars)
@@ -155,7 +155,7 @@ def search(request):
             totalStars += review.stars
 
         totalReviews = len(list(reviews))
-        if totalReviews is not 0:
+        if totalReviews != 0:
             totalStars = totalStars/totalReviews
         totalStars = round(totalStars)
         b.totalStar = range(totalStars)
@@ -191,7 +191,7 @@ def  bookview(request,pk):
         totalStars += review.stars
 
     totalReviews = len(list(reviews))
-    if totalReviews is not 0:
+    if totalReviews != 0:
         totalStars = totalStars/totalReviews
     totalStars = round(totalStars)
     book.totalStar = range(totalStars)
@@ -207,7 +207,7 @@ def  bookview(request,pk):
             totalStars += review.stars
 
         totalReviews = len(list(reviews))
-        if totalReviews is not 0:
+        if totalReviews != 0:
             totalStars = totalStars/totalReviews
         totalStars = round(totalStars)
         b.totalStar = range(totalStars)

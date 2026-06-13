@@ -5,7 +5,7 @@ from operator import mod
 from statistics import mode
 import sys
 import os
-from tkinter.tix import Tree
+# from tkinter.tix import Tree
 sys.path.append("..")
 from users.models import Profile
 from django.db import models
